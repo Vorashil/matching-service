@@ -1,0 +1,2 @@
+class GaleShapleyException(Exception):
+    pass

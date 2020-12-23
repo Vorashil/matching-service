@@ -2,6 +2,7 @@ from flask import Flask, request, jsonify
 from flask.wrappers import JSONMixin
 
 from main.algorithms import erdil_ergin as ee
+from main.algorithms import gale_shapley as gs
 from main.domain.commoninput import CommonInput
 import json
 
@@ -21,7 +22,14 @@ def run_erdil_ergin_algorithms():
 
 @app.route('/gale-shapley', methods=['POST'])
 def run_gale_shapley():
-    pass
+    common_input = parse_input(request)
+    return gs.match(common_input)
+
+
+@app.route('/gale-shapley/random', methods=['POST'])
+def run_random_gale_shapley():
+    common_input = parse_input(request)
+    return gs.random_match(common_input)
 
 
 @app.route('/check-input', methods=['POST'])

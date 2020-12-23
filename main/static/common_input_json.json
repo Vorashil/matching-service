@@ -1,33 +1,53 @@
 {
   "men_list": [
     {
-      "name": "m_1",
+      "name": "alpha",
       "preference_list": [
-        "w_1",
-        "w_2"
+        "A",
+        "B",
+        "C"
       ]
     },
     {
-      "name": "m_2",
+      "name": "beta",
       "preference_list": [
-        "w_2",
-        "w_1"
+        "B",
+        "C",
+        "A"
+      ]
+    },
+    {
+      "name": "gamma",
+      "preference_list": [
+        "C",
+        "A",
+        "B"
       ]
     }
   ],
   "women_list": [
     {
-      "name": "w_1",
+      "name": "A",
       "preference_list": [
-        "m_1",
-        "m_2"
+        "beta",
+        "gamma",
+        "alpha"
       ]
     },
     {
-      "name": "w_2",
+      "name": "B",
       "preference_list": [
-        "m_2",
-        "m_1"
+        "gamma",
+        "alpha",
+        "beta"
+      ]
+    },
+    {
+      "name": "C",
+      "preference_list": [
+        "alpha",
+        "beta",
+        "gamma"
       ]
     }
   ]
