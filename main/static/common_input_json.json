@@ -1,0 +1,34 @@
+{
+  "men_list": [
+    {
+      "name": "m_1",
+      "preference_list": [
+        "w_1",
+        "w_2"
+      ]
+    },
+    {
+      "name": "m_2",
+      "preference_list": [
+        "w_2",
+        "w_1"
+      ]
+    }
+  ],
+  "women_list": [
+    {
+      "name": "w_1",
+      "preference_list": [
+        "m_1",
+        "m_2"
+      ]
+    },
+    {
+      "name": "w_2",
+      "preference_list": [
+        "m_2",
+        "m_1"
+      ]
+    }
+  ]
+}
